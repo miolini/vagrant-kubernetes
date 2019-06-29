@@ -1,0 +1,4 @@
+.config
+setup-node-join.sh
+*.log
+.vagrant
