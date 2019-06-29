@@ -13,3 +13,4 @@ kubectl get nodes
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 kubeadm token create --print-join-command > /vagrant/setup-node-join.sh
 cp /etc/kubernetes/admin.conf /vagrant/.config
+kubectl taint node master node-role.kubernetes.io/master:NoSchedule-
